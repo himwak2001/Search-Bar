@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.google-search{
+/* 	margin: 10px; */
+	width: 30px;
+	position: absolute;
+	left: 16px;
+}
+
+.magnifier{
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	transition: width 0.4s;
+	transition-delay: 1s;
+}
+
+body{
+	margin: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	align-content: center;
+	background-color: aliceblue;
+/* 	top: 50%; */
+}
+
+.search-bar-container{
+	display: flex;
+	align-items: center;
+	background-color: aliceblue;
+	padding: 5px;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2), 
+		-6px -6px 10px rgba(255, 255, 255, 0.7);
+	width: 300px;
+	height: 50px;
+	border-radius: 50px;
+	margin: 10px;
+	position: relative;
+	transition: width 1.5s;
+}
+
+.search-input{
+	margin: 10px 50px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: rgb(100, 100, 100);
+}
+
+.active.search-bar-container{
+	width: 50px;
+}
+
+.active .search-input{
+	width: 0%;
+}
+
+.active .magnifier{
+	width: 0%;
+}
